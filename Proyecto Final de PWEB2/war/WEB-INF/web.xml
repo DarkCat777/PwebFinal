@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+<!-- ControllerAdd 
+	Dirección: /billing/add
+-->
+	<servlet>
+		<servlet-name>BillingControllerAdd</servlet-name>
+		<servlet-class>controller.billing.BillingControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BillingControllerAdd</servlet-name>
+		<url-pattern>/billing/add</url-pattern>
+	</servlet-mapping>
+<!-- ControllerDelete 
+	Dirección: /billing/delete
+-->
+	<servlet>
+		<servlet-name>BillingControllerDelete</servlet-name>
+		<servlet-class>controller.billing.BillingControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BillingControllerDelete</servlet-name>
+		<url-pattern>/billing/delete</url-pattern>
+	</servlet-mapping>
+<!-- ControllerEdit 
+	Dirección: /billing/edit
+-->
+	<servlet>
+		<servlet-name>BillingControllerEdit</servlet-name>
+		<servlet-class>controller.billing.BillingControllerEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BillingControllerEdit</servlet-name>
+		<url-pattern>/billing/edit</url-pattern>
+	</servlet-mapping>
+	<!-- ControllerIndex 
+	Dirección: /billing
+-->
+	<servlet>
+		<servlet-name>BillingControllerIndex</servlet-name>
+		<servlet-class>controller.billing.BillingControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BillingControllerIndex</servlet-name>
+		<url-pattern>/billing</url-pattern>
+	</servlet-mapping>
+	
+<!-- ControllerView
+	Dirección: /billing/view
+-->
+	<servlet>
+		<servlet-name>BillingControllerView</servlet-name>
+		<servlet-class>controller.billing.BillingControllerView</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BillingControllerView</servlet-name>
+		<url-pattern>/billing/view</url-pattern>
+	</servlet-mapping>
+	<!-- User Controller Index
+	 Dirección: /user-->
+	<servlet>
+		<servlet-name>UsersControllerIndex</servlet-name>
+		<servlet-class>controller.user.UsersControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersControllerIndex</servlet-name>
+		<url-pattern>/user</url-pattern>
+	</servlet-mapping>
+	<!-- Role Controller Index
+	 Dirección: /role-->
+	<servlet>
+		<servlet-name>RoleControllerIndex</servlet-name>
+		<servlet-class>controller.role.RoleControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleControllerIndex</servlet-name>
+		<url-pattern>/role</url-pattern>
+	</servlet-mapping>
+	<!-- Role Controller View
+	 Dirección: /role/view-->
+	<servlet>
+		<servlet-name>RoleControllerView</servlet-name>
+		<servlet-class>controller.role.RoleControllerView</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleControllerView</servlet-name>
+		<url-pattern>/role/view</url-pattern>
+	</servlet-mapping>
+	<!-- Role Controller Add
+	 Dirección: /role/add-->
+	<servlet>
+		<servlet-name>RoleControllerAdd</servlet-name>
+		<servlet-class>controller.role.RoleControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleControllerAdd</servlet-name>
+		<url-pattern>/role/add</url-pattern>
+	</servlet-mapping>
+	<!-- Role Controller Edit
+	 Dirección: /role/edit-->
+	<servlet>
+		<servlet-name>RoleControllerEdit</servlet-name>
+		<servlet-class>controller.role.RoleControllerEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleControllerEdit</servlet-name>
+		<url-pattern>/role/edit</url-pattern>
+	</servlet-mapping>
+	<!-- Role Controller Delete
+	 Dirección: /role/delete-->
+	<servlet>
+		<servlet-name>RoleControllerDelete</servlet-name>
+		<servlet-class>controller.role.RoleControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleControllerDelete</servlet-name>
+		<url-pattern>/role/delete</url-pattern>
+	</servlet-mapping>
+	<!-- User Controller Add
+	 Dirección: /user/add-->
+	<servlet>
+		<servlet-name>UsersControllerAdd</servlet-name>
+		<servlet-class>controller.user.UsersControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersControllerAdd</servlet-name>
+		<url-pattern>/user/add</url-pattern>
+	</servlet-mapping>
+	<!-- User Controller View
+	 Dirección: /user/view-->
+	<servlet>
+		<servlet-name>UsersControllerView</servlet-name>
+		<servlet-class>controller.user.UsersControllerView</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersControllerView</servlet-name>
+		<url-pattern>/user/view</url-pattern>
+	</servlet-mapping>
+	<!-- User Controller Delete
+	 Dirección: /user/delete-->
+	<servlet>
+		<servlet-name>UsersControllerDelete</servlet-name>
+		<servlet-class>controller.user.UsersControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersControllerDelete</servlet-name>
+		<url-pattern>/user/delete</url-pattern>
+	</servlet-mapping>
+	<!-- User Controller Edit
+	 Dirección: /user/edit-->
+	<servlet>
+		<servlet-name>UsersControllerEdit</servlet-name>
+		<servlet-class>controller.user.UsersControllerEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersControllerEdit</servlet-name>
+		<url-pattern>/user/edit</url-pattern>
+	</servlet-mapping>
+	<!-- Access Controller Index
+	 Dirección: /access-->
+	<servlet>
+		<servlet-name>AccessControllerIndex</servlet-name>
+		<servlet-class>controller.access.AccessControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessControllerIndex</servlet-name>
+		<url-pattern>/access</url-pattern>
+	</servlet-mapping>
+	<!-- Access Controller View
+	 Dirección: /access/view-->
+	<servlet>
+		<servlet-name>AccessControllerView</servlet-name>
+		<servlet-class>controller.access.AccessControllerView</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessControllerView</servlet-name>
+		<url-pattern>/access/view</url-pattern>
+	</servlet-mapping>	
+	<!-- Access Controller Add
+	 Dirección: /access/add-->
+	<servlet>
+		<servlet-name>AccessControllerAdd</servlet-name>
+		<servlet-class>controller.access.AccessControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessControllerAdd</servlet-name>
+		<url-pattern>/access/add</url-pattern>
+	</servlet-mapping>	
+	<!-- Access Controller Delete
+	 Dirección: /access/delete-->
+	<servlet>
+		<servlet-name>AccessControllerDelete</servlet-name>
+		<servlet-class>controller.access.AccessControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessControllerDelete</servlet-name>
+		<url-pattern>/access/delete</url-pattern>
+	</servlet-mapping>
+	<!-- Access Controller Edit
+	 Dirección: /access/delete-->
+	<servlet>
+		<servlet-name>AccessControllerEdit</servlet-name>
+		<servlet-class>controller.access.AccessControllerEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessControllerEdit</servlet-name>
+		<url-pattern>/access/edit</url-pattern>
+	</servlet-mapping>	
+	<!-- Resource Controller Edit
+	 Dirección: /resource/edit-->
+	<servlet>
+		<servlet-name>ResourceControllerEdit</servlet-name>
+		<servlet-class>controller.resource.ResourceControllerEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResourceControllerEdit</servlet-name>
+		<url-pattern>/resource/edit</url-pattern>
+	</servlet-mapping>
+	<!-- Resource Controller Add
+	 Dirección: /resource/add-->
+	<servlet>
+		<servlet-name>ResourceControllerAdd</servlet-name>
+		<servlet-class>controller.resource.ResourceControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResourceControllerAdd</servlet-name>
+		<url-pattern>/resource/add</url-pattern>
+	</servlet-mapping>
+	<!-- Resource Controller Delete
+	 Dirección: /resource/delete-->
+	<servlet>
+		<servlet-name>ResourceControllerDelete</servlet-name>
+		<servlet-class>controller.resource.ResourceControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResourceControllerDelete</servlet-name>
+		<url-pattern>/resource/delete</url-pattern>
+	</servlet-mapping>
+	<!-- Resource Controller View
+	 Dirección: /resource/view-->
+	<servlet>
+		<servlet-name>ResourceControllerView</servlet-name>
+		<servlet-class>controller.resource.ResourceControllerView</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResourceControllerView</servlet-name>
+		<url-pattern>/resource/view</url-pattern>
+	</servlet-mapping>
+	<!-- Resource Controller Index
+	 Dirección: /resource-->
+	<servlet>
+		<servlet-name>ResourceControllerIndex</servlet-name>
+		<servlet-class>controller.resource.ResourceControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResourceControllerIndex</servlet-name>
+		<url-pattern>/resource</url-pattern>
+	</servlet-mapping>
+	<!-- User Controller LogIn
+	 Dirección: /user/login-->
+	<servlet>
+		<servlet-name>UsersControllerLogIn</servlet-name>
+		<servlet-class>controller.user.UsersControllerLogIn</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersControllerLogIn</servlet-name>
+		<url-pattern>/user/login</url-pattern>
+	</servlet-mapping>
+	<!-- User Controller LogOut
+	 Dirección: /user/add-->
+	<servlet>
+		<servlet-name>UsersControllerLogOut</servlet-name>
+		<servlet-class>controller.user.UsersControllerLogOut</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersControllerLogOut</servlet-name>
+		<url-pattern>/user/logout</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
